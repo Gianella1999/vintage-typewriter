@@ -2,12 +2,57 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/png" href="/icon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>vintage-typewriter</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Typewriter</title>
   </head>
   <body>
-    <div id="app"></div>
+    <nav>
+      <div class="nav-logo">
+        <img src="icon.png" alt="Descripción" width="22" height="22">
+        <h1 class="title">Vintage Typewriter</h1>
+      </div>
+      <div class="nav-buttons">
+        <button id="button-save"> 
+          <span class="material-symbols-outlined material-icons" style="color: #558484;" >save</span>
+          <span> Save Draft  </span>
+        </button>
+        <button id="button-print"> 
+          <span class="material-symbols-outlined material-icons" style="color: #ffffff;">print</span>
+          <span>Print to PDF </span> 
+        </button>
+      </div>
+    </nav>
+
+    <main>
+      <div class="counter">
+        <div>WORDS: <span id="word-count"> 0</span></div>
+        <div>CHARS: <span id="char-count"> 0</span></div>
+      </div>
+      <div class="typewriter">
+      <div class="typewriter__paper">
+        <hr>
+        <div class="paper__content" id="paperContent">
+          <!-- <span class="paper__cursor" id="cursor">|</span> -->
+          <textarea class="typewriter__input" id="typewriterInput" autofocus></textarea>
+          <!-- <input id="textarea" name="textarea" type="text" autofocus ></input> -->
+        </div>
+      </div>
+      <div class="typewriter_blade_holder">
+        <div class="blade_holder"></div>
+        <div class="blade_holder"></div>
+      </div>
+
+      <div class="typewriter_keyboard">
+        
+      </div>
+      </div>
+    </main>
+
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
+
+
+
